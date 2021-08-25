@@ -9,30 +9,103 @@
     </head>
 
     <body>
-        <div class="container-fluid" style="margin:10px">
+        <div class="container" style="margin-top: 20px;">
             <div class="row">
-                <div class="col-6">
-                    <div class="row" style="margin-bottom: 4px;">
-                       <h5>Hospify Sdn. Bhd</h5> <br/>
-                    </div>
-                    <div class="row" style="margin-bottom: 4px;">
-                        <p>77, Lorong Lembah Permai 3,</p> 
-                        <p>11200 Tanjung Bungah, Pulau Pinang</p>
-                    </div>
-                    <div class="row" style="margin-bottom: 4px;">
-                        04-123456
+                <div class="col-1">
+
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="row">
+                               <h5>Hospify Sdn. Bhd</h5> <br/>
+                            </div>
+                            <div class="row" >
+                                <p style="margin:0px">77, Lorong Lembah Permai 3,</p> 
+                                <p style="margin-bottom: 0px;">11200 Tanjung Bungah, Pulau Pinang</p>
+                            </div>
+                            <div class="row">
+                                <p>04-1234567</p>
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Invoice #</th>
+                                        <th scope="col">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <td>126356#7J712</td>
+                                    <td id = date></td>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-2">
-                    <table class="table" style="border:1px">
-                        <thead>
-                            <th scope="col">Invoice #</th>
-                            <th scope="col">Date</th>
-                        </thead>
-                    </table>
+                <div class="col-1">
+                    
                 </div>
             </div>
+            
+            <div class="row"></div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="col-3">
+                        <div class="row">
+                            <p style="font-weight:bold; margin-bottom: 0px;">BILL TO</p>
+                            <p style="margin-bottom: 0px;">Hospital Seberang Jaya</p>
+                            <p style="margin-bottom: 0px;">Jalan Tun Hussein Onn, </p>
+                            <p style="margin-bottom: 0px;">Seberang Jaya, 13700</p>
+                            <p style="margin-bottom: 0px;">Permatang Pauh, Pulau Pinang</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <br/><br/>
+            <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table">
+                   <thead>
+                       <tr>
+                           <th scope="col">Description</th>
+                           <th scope="col">Amount (RM)</th>
+                       </tr>
+                   </thead>
+                   <tbody style="margin-bottom: 300px;">
+                       <tr>
+                           <td>Property 1 Rental</td>
+                           <td>3,000.00</td>
+                       </tr>
+                       <tr>
+                        <td>Service Charge (6%)</td>
+                        <td>180.00</td>
+                    </tr>
+                   </tbody>
+                   <tfoot style="margin-top: 300px;padding-top: 300px;">
+                       <td style="font-weight: bold;text-align: right;">Total : </td>
+                       <td>3,180.00</td>
+                   </tfoot>
+                </table>
+            </div>
+            <div class="col-1"></div>
         </div>
+        </div>
+        <script>
+            var date = new Date,
+                 day = date.getDate()
+                 month = (date.getMonth() +1)
+                 year = date.getFullYear()
+                 fullDate = day + '-' + month + '-' + year
+        
+            document.getElementById('date').innerHTML = fullDate.toString()
+        </script>
     </body>
 </html>
