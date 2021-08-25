@@ -12,6 +12,86 @@
     />
   </head>
   <body>
-    This is profile page
+    <div
+      style="
+        height: 70px;
+        display: flex;
+        align-items: center;
+        background-color: #0693ef;
+        padding: 10px 20px;
+        color: white;
+      "
+    >
+      <img src="resources/Hospify logo.png" style="max-height: 50px; cursor: pointer" />
+
+      <div style="margin-left: 50px; display: flex; flex-direction: row">
+        <div style="cursor: pointer"><h5>Home</h5></div>
+        <div style="margin-left: 50px; cursor: pointer"><h5>My rentals</h5></div>
+        <a href="profile.html">
+          <div style="margin-left: 50px; cursor: pointer; color: black; text-decoration: none">
+            <h5>My profile</h5>
+          </div>
+        </a>
+        <div style="margin-left: 50px; cursor: pointer"><h5>About</h5></div>
+      </div>
+
+      <div style="flex: 1"></div>
+      <a href="index.html"><div style="margin-right: 20px; cursor: pointer; color: white">Logout</div></a>
+    </div>
+
+    <div style="height: calc(100vh - 80px); padding: 50px">
+      <div style="height: 100%; padding: 40px 60px; background-color: white; box-shadow: 1px 1px 5px #000000">
+        <div style="display: flex; flex-direction: row; height: calc(100% - 40px)">
+          <div>
+            <img src="resources/user.png" style="max-height: 150px" />
+          </div>
+          <div style="margin-left: 30px">
+            <h2>Username</h2>
+
+            <div style="margin-top: 20px">
+              <div style="margin-right: 10px; margin-bottom: 5px"><h5>Phone no</h5></div>
+              <div style="border-bottom: 1px solid black; width: 300px; padding-left: 5px">012-34567890</div>
+            </div>
+
+            <div style="margin-top: 20px">
+              <div style="margin-right: 10px; margin-bottom: 5px"><h5>Email</h5></div>
+              <div style="border-bottom: 1px solid black; width: 300px; padding-left: 5px">-</div>
+            </div>
+
+            <div style="margin-top: 20px">
+              <div style="margin-right: 10px; margin-bottom: 5px"><h5>Password</h5></div>
+              <div
+                style="
+                  border-bottom: 1px solid black;
+                  width: 300px;
+                  padding-left: 5px;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: row;
+                "
+              >
+                <div>**************</div>
+                <div style="flex: 1"></div>
+                <img src="resources/invisible.png" style="max-height: 20px; margin-right: 20px; cursor: pointer" />
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-left: 100px; width: 100%">
+            <div>Total rentals: <a href="index.html">10</a></div>
+            <div style="margin-top: 20px">Total earnings: RM 25,000</div>
+          </div>
+        </div>
+
+        <div style="width: 100%; display: flex; flex-direction: row-reverse">
+          <button
+            class="btn btn-primary"
+            style="width: 200px; height: 40px; background-color: #0693ef; border-radius: 10px"
+          >
+            Edit profile
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
