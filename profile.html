@@ -11,7 +11,14 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body
+    style="
+      background-image: url(resources/background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    "
+  >
     <div
       style="
         height: 70px;
@@ -25,13 +32,11 @@
       <img src="resources/Hospify logo.png" style="max-height: 50px; cursor: pointer" />
 
       <div style="margin-left: 50px; display: flex; flex-direction: row">
-        <div style="cursor: pointer"><h5>Home</h5></div>
-        <div style="margin-left: 50px; cursor: pointer"><h5>My rentals</h5></div>
-        <a href="profile.html">
-          <div style="margin-left: 50px; cursor: pointer; color: black; text-decoration: none">
-            <h5>My profile</h5>
-          </div>
+        <a href="property-list.html">
+          <div style="cursor: pointer; color: white"><h5>Home</h5></div>
         </a>
+        <div style="margin-left: 50px; cursor: pointer"><h5>My rentals</h5></div>
+        <div style="margin-left: 50px; cursor: pointer; color: black"><h5>My profile</h5></div>
         <div style="margin-left: 50px; cursor: pointer"><h5>About</h5></div>
       </div>
 
