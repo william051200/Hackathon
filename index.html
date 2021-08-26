@@ -9,26 +9,6 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <script>
-      let btnLogin = document.getElementById("btnLogin");
-      btnLogin.addEventListener("click", loginValidation());
-
-      function loginValidation() {
-        let username = document.getElementById("txtUsername").text;
-        let aBtnLogin = document.getElementById("aBtnLogin");
-
-        if (username == "admin") {
-          aBtnLogin.href = "property-list-admin.html";
-          return false;
-        } else if (username == "hospital") {
-          aBtnLogin.href = "property-list-hospital.html";
-          return false;
-        } else {
-          aBtnLogin.href = "property-list-user.html";
-          return false;
-        }
-      }
-    </script>
   </head>
   <body
     style="
@@ -103,9 +83,8 @@
           <div
             style="margin-top: 110px; display: flex; justify-content: center"
           >
-            <a id="aBtnLogin">
+            <a href="appointment_list.html">
               <button
-                id="btnLogin"
                 class="btn btn-primary"
                 style="
                   width: 200px;
@@ -113,7 +92,6 @@
                   background-color: #0693ef;
                   border-radius: 10px;
                 "
-                onclick="loginValidation()"
               >
                 Log in
               </button>
@@ -139,4 +117,13 @@
       </div>
     </div>
   </body>
+
+  <script>
+    function loginValidation() {
+      let username = document.getElementById("txtUsername").text;
+      if ((username = "admin")) return "admin";
+      else if ((username = "hospital")) return "hospital";
+      else return "user";
+    }
+  </script>
 </html>
