@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div
+      style="
+        height: 70px;
+        display: flex;
+        align-items: center;
+        background-color: #0693ef;
+        padding: 10px 20px;
+        color: white;
+      "
+    >
+      <img src="resources/Hospify logo.png" style="max-height: 50px; cursor: pointer" />
+
+      <div style="margin-left: 50px; display: flex; flex-direction: row">
+        <a href="property-list-hospital.html">
+          <div style="cursor: pointer; color: white"><h5>Home</h5></div>
+        </a>
+
+        <div style="margin-left: 50px; cursor: pointer; color: black">
+          <h5>Appointment List</h5>
+        </div>
+        <div style="margin-left: 50px; cursor: pointer"><h5>About</h5></div>
+      </div>
+
+      <div style="flex: 1"></div>
+      <a href="index.html"><div style="margin-right: 20px; cursor: pointer; color: white">Logout</div></a>
+    </div>
+
+    <div class="container" style="margin-bottom: 30px; margin-top: 20px">
+      <div class="row">
+        <p id="dateTmr" style="font-weight: bold"></p>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr style="color: deepskyblue">
+            <th scope="col">#</th>
+            <th scopre="col">Time</th>
+            <th scope="col">Property name</th>
+            <th scope="col">Property address</th>
+            <th scope="col">Hospital</th>
+            <th scope="col">PIC</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row" style="color: deepskyblue">1</th>
+            <td>09:00</td>
+            <td>Galaxy Hotel</td>
+            <td>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.</td>
+            <td>Hospital Seberang Jaya</td>
+            <td>SAM CHUN HANG</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row" style="color: deepskyblue">2</th>
+            <td>11:00</td>
+            <td>Perai Warehouse</td>
+            <td>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.</td>
+            <td>Hospital Seberang Jaya</td>
+            <td>SAM CHUN HANG</td>
+          </tr>
+          <tr>
+            <th scope="row" style="color: deepskyblue">3</th>
+            <td>13:00</td>
+            <td>First Universe Hotel</td>
+            <td>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.</td>
+            <td>Hospital Seberang Jaya</td>
+            <td>SAM CHUN HANG</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <div class="row">
+        <p id="dateTmr" style="font-weight: bold"></p>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr style="color: deepskyblue">
+            <th scope="col">#</th>
+            <th scopre="col">Time</th>
+            <th scope="col">Property name</th>
+            <th scope="col">Property address</th>
+            <th scope="col">Hospital</th>
+            <th scope="col">PIC</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row" style="color: deepskyblue">1</th>
+            <td>11:00</td>
+            <td>Juru Homestay</td>
+            <td>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.</td>
+            <td>Hospital Seberang Jaya</td>
+            <td>SAM CHUN HANG</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row" style="color: deepskyblue">2</th>
+            <td>13:00</td>
+            <td>Second World Hotel</td>
+            <td>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.</td>
+            <td>Hospital Seberang Jaya</td>
+            <td>SAM CHUN HANG</td>
+          </tr>
+          <tr>
+            <th scope="row" style="color: deepskyblue">3</th>
+            <td>15:00</td>
+            <td>Jazz Hotel</td>
+            <td>Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur, P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.</td>
+            <td>Hospital Seberang Jaya</td>
+            <td>SAM CHUN HANG</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-1"></div>
+  </body>
+
+  <script>
+    var today = new Date();
+    var tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    document.getElementById("date").innerHTML = today.toDateString();
+    document.getElementById("dateTmr").innerHTML = tomorrow.toDateString();
+  </script>
+</html>
