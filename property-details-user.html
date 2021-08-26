@@ -11,14 +11,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body
-    style="
-      background-image: url(resources/background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-    "
-  >
+  <body>
     <div
       style="
         height: 70px;
@@ -36,14 +29,18 @@
 
       <div style="margin-left: 50px; display: flex; flex-direction: row">
         <a href="property-list-user.html">
-          <div style="cursor: pointer; color: white"><h5>Home</h5></div>
+          <div style="cursor: pointer; color: black"><h5>Home</h5></div>
         </a>
-        <div style="margin-left: 50px; cursor: pointer">
-          <h5>My rentals</h5>
-        </div>
-        <div style="margin-left: 50px; cursor: pointer">
-          <h5>My profile</h5>
-        </div>
+        <a href="property-list-user-myRentals.html">
+          <div style="margin-left: 50px; cursor: pointer; color: white">
+            <h5>My rentals</h5>
+          </div>
+        </a>
+        <a href="profile.html">
+          <div style="margin-left: 50px; cursor: pointer; color: white">
+            <h5>My profile</h5>
+          </div>
+        </a>
         <div style="margin-left: 50px; cursor: pointer"><h5>About</h5></div>
       </div>
 
@@ -116,32 +113,6 @@
               RM 5,000/month
             </div>
           </div>
-        </div>
-
-        <div style="width: 100%; display: flex; flex-direction: row-reverse">
-          <button
-            class="btn btn-primary"
-            style="
-              width: 100px;
-              height: 40px;
-              background-color: #0693ef;
-              border-radius: 10px;
-            "
-          >
-            Edit
-          </button>
-
-          <button
-            class="btn btn-danger"
-            style="
-              margin-right: 10px;
-              width: 100px;
-              height: 40px;
-              border-radius: 10px;
-            "
-          >
-            Delete
-          </button>
         </div>
       </div>
     </div>
